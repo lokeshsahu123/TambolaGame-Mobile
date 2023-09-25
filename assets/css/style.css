@@ -1,0 +1,829 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@100;200;400;500&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,700;0,900;1,100&family=Righteous&display=swap");
+:root {
+  --mainbg: #faae18;
+}
+* {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.josefinfont {
+  font-family: "Josefin Sans", sans-serif;
+}
+.secondColor {
+  color: #ffc30c;
+}
+.secondBg {
+  background: #ffc30c;
+}
+.mainrBg {
+  background: #aa0019;
+}
+.userProfile img {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #aa0019;
+}
+.shadow-btn {
+  box-shadow: 0 0 5px #672012;
+}
+.menuBtn {
+  padding: 0;
+  width: 42px;
+  height: 42px;
+  color: #fadf81;
+  font-size: 26px;
+}
+.menuBtn i {
+  color: #fff;
+}
+/*.border-bottom {
+  border-bottom-color: #e26c26 !important;
+
+}*/
+.walletBtn {
+  background: #aa0019;
+  padding: 5px 10px;
+  font-size: 14px;
+  min-width: 110px;
+}
+.addIcon {
+  background: #000;
+  border-radius: 50%;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.tambolaGame {
+  background: url("../img/tambolabg.avif") no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  background: linear-gradient(to bottom, #180014, #430003);
+}
+body {
+  background: #fff;
+}
+.tambolaGame::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  opacity: 0.3;
+}
+.tambolaGame {
+  position: relative;
+  z-index: 1;
+}
+.tambola-show {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  padding: 30px;
+  padding-top: 30px;
+  padding-top: 20px;
+}
+.tambola-show h2 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 21px;
+}
+.tambola-show p,
+.sub-title {
+  font-size: 14px;
+  color: #ccc;
+}
+.allBtn {
+  background: #aa0019;
+  border: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px 15px;
+  border-radius: 2px;
+}
+.title-block {
+  font-size: 32px !important;
+  font-weight: 800 !important;
+  /*text-shadow: 0 3px 12px #000;*/
+  color: #ffc30c !important;
+}
+.header {
+  /*background: rgba(0,0,0, 0.7);*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.title-block span {
+  font-family: "Dancing Script", cursive;
+  color: #fff;
+}
+.title-block {
+  font-family: "Josefin Sans", sans-serif;
+}
+.dancing-font {
+  font-family: "Dancing Script", cursive;
+}
+.tambola-date::before {
+  content: "";
+  display: block;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transform: skew(31deg);
+  border: 0;
+  border-bottom-width: 0px;
+  border-bottom-style: none;
+  border-bottom-color: currentcolor;
+  border-bottom: 0;
+  background: #eaac08;
+  border-radius: 0px 0 0 0;
+}
+.tambola-date {
+  top: -18px;
+  padding: 0 8px;
+  color: #000;
+  z-index: 1;
+  right: 7px;
+  font-size: 12px;
+}
+.live-btn::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: green;
+  position: absolute;
+  left: 5px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.live-btn {
+  background: #aa0019;
+  border: 0;
+  border-radius: 2px;
+  font-size: 11px;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  padding-left: 18px;
+}
+.timer {
+  font-size: 12px;
+  color: #aa0019;
+}
+.gametabBtn {
+  border: 0;
+  background: #f8b708f0;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 2px;
+  color: #000;
+}
+.gametabBtn-active,
+.gametabBtn.active {
+  color: #fff;
+  background: #aa0019;
+}
+.ticket-table tr td.ticket-book {
+  background: #090002;
+}
+.ticket-table tr td {
+  min-width: 30px;
+  font-size: 14px;
+  padding: 7px 2px;
+}
+.ticket-radial {
+  background: #aa0019;
+  margin-bottom: 10px;
+  position: relative;
+  border-radius: 5px;
+}
+.ticket-radial::before,
+.ticket-radial::after,
+.ticket-radial-sub::before,
+.ticket-radial-sub::after {
+  /* color: ; */
+  content: "";
+  display: block;
+  /* quotes: ; */
+  width: 100%;
+  height: 15px;
+  position: absolute;
+  top: -4px;
+  background: radial-gradient(
+      circle,
+      transparent,
+      transparent 41%,
+      #aa0019 44%,
+      #aa0019 100%
+    ) -7px -8px/10px 16px repeat-x;
+  left: 0;
+  /* border-radius: ; */
+}
+.ticket-radial {
+  background: #aa0019;
+  margin-bottom: 10px;
+  position: relative;
+  border-radius: 0;
+  padding: 5px;
+}
+.ticket-table {
+  border-color: #684d51;
+}
+.ticket-radial::after {
+  top: inherit;
+  bottom: -4px;
+  transform: rotate(180deg);
+}
+.ticket-radial-sub {
+  padding: 8px;
+  background: #090002;
+  border-radius: 4px;
+}
+.ticket-table {
+  background: #ffffff1c;
+}
+.ticket-radial-sub::before,
+.ticket-radial-sub::after {
+  top: 0;
+  transform: rotate(0deg);
+  left: -4px;
+  height: 100%;
+  width: 15px;
+  background: radial-gradient(
+      circle,
+      transparent,
+      transparent 54%,
+      #aa0019 67%,
+      #aa0019 96%
+    ) -7px -8px/11px 11px repeat-y;
+  z-index: 111111;
+}
+.ticket-radial-sub::after {
+  left: auto;
+  right: 0;
+}
+.ticket-radial-sub::after {
+  left: auto;
+  right: -4px;
+  transform: rotate(180deg);
+}
+.history-table tr td {
+  padding: 5px 2px;
+  text-align: center;
+}
+.history-table tr td span {
+  background: #aa0019;
+  width: 32px;
+  display: flex;
+  text-align: center;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  font-size: 14px;
+  position: relative;
+  z-index: 1;
+}
+.circle-span {
+  background: #ffc30c !important;
+  color: #000;
+}
+.history-table tr td span.circle-span::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: #000;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+body {
+  background: url("https://img.freepik.com/premium-photo/technology-data-binary-code-network-conveying-connectivity_34629-785.jpg");
+  background-size: cover;
+  background-position: center;
+  /*background-blend-mode: overlay;
+  background-color: rgba(0,0,0, 0.5);*/
+}
+.tambola-show.border {
+  border-color: #eaac08 !important;
+}
+.tambola-show p.ticket-tro,
+.ticket-tro {
+  color: #ffc30c;
+}
+.ticket-number {
+  color: #be0621c2 !important;
+}
+.ticket-bit {
+  list-style: none;
+  gap: 10px;
+}
+.ticket-bit li {
+  width: 55px;
+  background: #aa0019;
+  border-radius: 50%;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ticket-bit li {
+  width: 45px;
+  background: #aa0019;
+  border-radius: 50%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #ffffff1c;
+  background: #000;
+  font-size: 10px;
+}
+.ticket-bit.spx {
+  border-color: #ffc30c;
+  font-size: 15px;
+  width: 50px;
+  height: 50px;
+}
+.ticket-table.table-sm {
+  border-color: #080003;
+}
+.modalAll .modal-content {
+  background: #241c1e;
+}
+.modalAll .modal-dialog {
+  max-width: 420px;
+}
+.quickfive-des {
+  background: #0a0002;
+  padding: 10px;
+  border-radius: 4px;
+}
+.quickfive-title {
+  font-size: 18px;
+}
+.quickfive-circle {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #ffc30c;
+  margin: 0px auto;
+}
+.won-price {
+  background: #ffc30c;
+  border-radius: 25px;
+  font-size: 14px;
+  padding: 2px 15px;
+  color: #000;
+  min-width: 95px;
+  display: inline-block;
+}
+.form-control-kyc,
+.upload-image {
+  background: #241c1e;
+  border-color: #241c1e;
+  color: #cccccc94;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.form-control-kyc::placeholder {
+  color: #cccccc94;
+}
+.panCard-form .form-label {
+  font-size: 14px;
+}
+.or-block::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  border-top: 1px dashed #ffc30c;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+}
+.whatsapp-icon {
+  background: #ffc30c;
+  color: #0d0001;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 26px;
+}
+
+/* offcanvas-left */
+
+.left-menu {
+  width: 271px !important;
+  left: -177px !important;
+  right: 0;
+  margin: auto;
+  background: #540101;
+
+  padding-left: 10px;
+}
+.left-menu.offcanvas.show:not(.hiding),
+.offcanvas.showing {
+  transform: none;
+}
+.left-menu.offcanvas-start {
+  transform: translateX(-400%);
+}
+.close_btn {
+  background: #df2837;
+  border: 1px solid #c36e6e;
+  border-radius: 50%;
+  width: 23px;
+  height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 15px;
+  position: absolute;
+  right: 17px;
+  top: 7px;
+}
+.left-menu .profile img {
+  width: 55px;
+  border: 2px solid #c28888;
+}
+.left-menu .profile i {
+  position: absolute;
+  top: -18px;
+  left: 40px;
+  background: #fff;
+  color: #300000;
+  border-radius: 50%;
+  padding: 6px;
+  font-size: 12px;
+  border: 1px solid #c28888;
+}
+.user-info {
+  display: flex;
+  align-items: end;
+  gap: 20px;
+}
+.user h6 {
+  margin-bottom: 2px;
+}
+.user {
+  font-size: 14px;
+}
+.yt {
+  color: #c28f03;
+}
+.btn-1 {
+  background: #43e4a8;
+  border: 2px solid #923623;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Josefin Sans";
+  /* box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #FFFFFF; */
+  width: 50%;
+  padding: 7px 0;
+  border-radius: 10px;
+}
+.btn-1 span {
+  background: #1ab67cb3;
+  display: block;
+  box-shadow: 0px 9px 7px #117752ed;
+  border-radius: 7px;
+}
+.btn-1 span i {
+  background: #0000008f;
+  border-radius: 50%;
+  padding: 4px;
+  font-size: 10px;
+  margin-left: 5px;
+}
+.btn-1:hover,
+.btn-1:focus {
+  background: #43e4a8;
+  border: 2px solid #923623;
+  outline: none;
+}
+.btn-2 {
+  background: #c299f0;
+  border: 2px solid #923623;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Josefin Sans";
+  padding: 7px 0;
+  border-radius: 10px;
+}
+.btn-2 span {
+  background: #ad7ce3;
+  display: block;
+  box-shadow: 0px 9px 7px #360c6391;
+  border-radius: 7px;
+  padding: 0 5px;
+}
+.btn-2:hover,
+.btn-2:focus {
+  background: #c299f0;
+  border: 2px solid #923623;
+  outline: none;
+}
+.offcanvas-btn .btn span {
+  font-family: "Righteous", cursive;
+  letter-spacing: 0.8px;
+  font-size: 14px;
+  text-shadow: 1px 1px 2px #000000c9;
+}
+.tools ul li {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 13px;
+}
+.tools ul li i {
+  background: rgb(194 0 0 / 86%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d0d0d047;
+}
+.user-social i {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ffffff63;
+  font-size: 18px;
+}
+.user-social a {
+  text-decoration: none;
+}
+.fa-youtube {
+  background: #ff0000;
+}
+.fa-instagram {
+  background: radial-gradient(
+    circle at 33% 100%,
+    #fed373 4%,
+    #f15245 30%,
+    #d92e7f 62%,
+    #9b36b7 85%,
+    #515ecf
+  );
+}
+.fa-facebook-f {
+  background: #4267b2;
+}
+.logout .btn-2 {
+  background: #f09c94d1;
+  border: 1px solid #d79a12a1;
+}
+.logout .btn-2 span {
+  background: #ff3d2f;
+  box-shadow: 0px 9px 7px #880900b8;
+  padding: 0 20px;
+  font-family: "Righteous", cursive;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+/* offcanvas-Right */
+.right-menu {
+  width: 345px !important;
+  left: 85px !important;
+}
+.right-menu.offcanvas.show:not(.hiding),
+.offcanvas.showing {
+  transform: none;
+}
+.right-menu.offcanvas-end {
+  transform: translateX(400%);
+}
+.rsb {
+  border-radius: 3px;
+  font-size: 19px;
+  font-weight: 800;
+  border-width: 2px;
+  padding: 10px;
+}
+/* Switch */
+
+.switch {
+  font-size: 12px;
+  position: relative;
+  display: inline-block;
+  width: 5.2em;
+  height: 2em;
+  overflow: hidden;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(255 192 0 / 71%);
+  transition: 0.4s;
+  border-radius: 30px;
+}
+input:checked + .slider:before {
+  transform: translateX(3em);
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.2em;
+  width: 1.2em;
+  border-radius: 20px;
+  left: 0.4em;
+  bottom: 0.4em;
+  background-color: #470000;
+  transition: 0.4s;
+}
+/* input:checked + .slider {
+  background-color: #2196f3;
+} */
+
+input:checked + .slider {
+  background-color: #ffdddd;
+}
+input:checked + .slider:before {
+  transform: translateX(3em);
+}
+.switch .text {
+  position: absolute;
+  top: 50%;
+  pointer-events: none;
+  text-transform: uppercase;
+  transform: translateY(-50%);
+  transition: 0.4s;
+}
+.switch .text.on {
+  left: 0.8rem;
+  transform: translateX(-3rem) translateY(-50%);
+}
+.switch .text.off {
+  color: rgb(0 0 0 / 86%);
+  right: 1rem;
+  font-weight: 600;
+}
+input:checked ~ .text.off {
+  transform: translateX(3rem) translateY(-50%);
+}
+
+input:checked ~ .text.on {
+  color: #310101;
+  right: 1rem;
+  font-weight: 600;
+  transform: translateX(0) translateY(-50%);
+}
+
+/*----Switch End----*/
+.setting-tools li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #110b0d;
+  padding: 10px 5px 10px 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  color: #ffc4bd;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.setting-tools li button {
+  color: #ffffff;
+  background: #aa0019;
+  border: none;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 1px 10px;
+  text-transform: uppercase;
+}
+
+@media screen and (orientation: landscape) and (max-width: 991px) and (min-width: 319px) {
+  .tombola-container {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 768px) {
+  .tombola-container {
+    width: 456px;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  body {
+    background: linear-gradient(to bottom, #180014, #430003);
+  }
+  .tambolaGame {
+    background: transparent;
+    padding: 0;
+  }
+  .tambola-show h2 {
+    font-size: 16px;
+  }
+  .allBtn {
+    font-size: 12px;
+  }
+  .tambola-show {
+    padding: 15px;
+    padding-top: 10px;
+  }
+  .menuBtn {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+  .userProfile img {
+    width: 30px;
+    height: 30px;
+  }
+  .tambolaGame::before {
+    display: none;
+  }
+  .left-menu {
+    width: 271px !important;
+    left: 0 !important;
+    right: unset;
+  }
+  .right-menu {
+    right: 0 !important;
+    left: unset !important;
+  }
+}
+
+/* Ticket */
+.ticket-modal {
+  border-radius: 30px 0;
+  text-align: center;
+}
+.ticket-modal .modal-body h2 {
+  font-weight: 700;
+  font-family: cursive;
+}
+
+.ticket-modal .modal-footer .btn-2 {
+  width: 100px;
+  background: #a06ed6;
+  border: 1px solid #b9b51b;
+}
+.ticket-modal .modal-footer .btn-2 span {
+  background: #7e4cb5;
+  box-shadow: 0px 9px 7px #4c1885b8;
+}
+
+.btn_modal .modal-body {
+  margin: 0 auto;
+  padding: 80px 0;
+}
+.buyTicketModal .bt{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.buyTicketModal .bt button {
+    min-width: 57%;
+}
+ .buyTicketModal{
+border-radius: 0 !important;
+}

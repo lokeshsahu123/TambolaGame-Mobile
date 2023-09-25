@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tambola Game</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/Fontawsome/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-md-4 tombola-container">
+      <div class="container-fluid tambolaGame pt-0">
+        <div class="row justify-content-between align-items-center header">
+          <div class="w-auto">
+            <div class="d-flex align-items-center">
+              <button class="menuBtn rounded mainrBg border-0 me-2 shadow-btn d-flex align-items-center justify-content-center"><i class="fa-solid fa-bars"></i></button>
+              <button class="userProfile border-0 bg-transparent rounded-circle p-0"><img class="rounded-circle shadow-btn" src="assets/img/profile.jpg" /></button>
+            </div>
+          </div>
+          <div class="w-auto">
+            <a href="#">
+              <img src="assets/img/logo.png" width="100" />
+            </a>
+          </div>
+          <div class="w-auto">
+            <div class="d-flex align-items-center">
+            <!-- <button class="walletBtn border-0 shadow-btn rounded-pill me-3 d-flex align-items-center justify-content-between">
+              <i class="fa-solid fa-wallet"></i><span>₹ 1</span><i class="addIcon fa-solid fa-plus"></i>
+            </button> -->
+            <button class="menuBtn rounded mainrBg border-0 shadow-btn me-2 d-flex align-items-center justify-content-center"><i class="fa-solid fa-plus"></i></button>
+              <button class="menuBtn rounded mainrBg border-0 shadow-btn  d-flex align-items-center justify-content-center"><i class="fa-solid fa-gear"></i></button>
+            </div>
+          </div>
+          
+          </div>
+
+          <div class="row mt-4 mb-2">
+            <div class="w-auto">
+              <h2 class="title-block">KYC <span>Information</h2>
+            </div>
+          </div>
+          
+          <div class="row mt-4">
+            <div class="col-12 mt-0 mb-2">
+              <ul class="nav nav-tabs border-0 p-0 mb-3" id="myTab" role="tablist">
+  <li class="nav-item w-50" role="presentation">
+    <button class="gametabBtn active text-uppercase w-100" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Pan</button>
+  </li>
+  <li class="nav-item ps-1 w-50" role="presentation">
+    <button class="gametabBtn text-uppercase w-100" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Aadhar</button>
+  </li>
+</ul>
+              <div class="w-100 tambola-show position-relative">
+                
+                <div class="row">
+
+                  
+<div class="tab-content panCard-form" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    
+    <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label opacity-50">PAN No.</label>
+    <input type="text" placeholder="Pan No." class="form-control form-control-kyc" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label opacity-50">Name</label>
+    <input type="text" placeholder="Name As Per Proof" class="form-control form-control-kyc" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3">
+    <label for="formFileLg" class="form-label opacity-50">Upload PAN Image</label>
+  <input class="form-control form-control-lg upload-image" id="formFileLg" type="file">
+  </div>
+  <button type="submit" class="allBtn">Submit</button>
+</form>
+
+  </div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+    <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label opacity-50">Aadhar No.</label>
+    <input type="text" placeholder="Aadhar No." class="form-control form-control-kyc" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label opacity-50">Name</label>
+    <input type="text" placeholder="Name As Per Proof" class="form-control form-control-kyc" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3">
+    <label for="formFileLg" class="form-label opacity-50">Upload Aadhar Front Image</label>
+  <input class="form-control form-control-lg upload-image" id="formFileLg" type="file">
+  </div>
+  <div class="mb-3">
+    <label for="formFileLg" class="form-label opacity-50">Upload Aadhar Back Image</label>
+  <input class="form-control form-control-lg upload-image" id="formFileLg" type="file">
+  </div>
+
+  <button type="submit" class="allBtn">Submit</button>
+</form>
+  </div>
+</div>
+
+                </div>
+
+                
+              
+                  
+                </div>
+            </div>
+            
+
+          </div>
+          
+
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+
+</body>
+</html>

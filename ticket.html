@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tambola Game</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/Fontawsome/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-md-4 tombola-container">
+        <div class="container-fluid tambolaGame pt-0">
+          <div class="row justify-content-between align-items-center header">
+            <div class="w-auto">
+              <div class="d-flex align-items-center">
+                <button
+                  class="menuBtn rounded mainrBg border-0 me-2 shadow-btn d-flex align-items-center justify-content-center"><i
+                    class="fa-solid fa-bars"></i></button>
+                <button class="userProfile border-0 bg-transparent rounded-circle p-0"><img
+                    class="rounded-circle shadow-btn" src="assets/img/profile.jpg" /></button>
+              </div>
+            </div>
+            <div class="w-auto">
+              <a href="#">
+                <img src="assets/img/logo.png" width="100" />
+              </a>
+            </div>
+            <div class="w-auto">
+              <div class="d-flex align-items-center">
+                <!-- <button class="walletBtn border-0 shadow-btn rounded-pill me-3 d-flex align-items-center justify-content-between">
+              <i class="fa-solid fa-wallet"></i><span>₹ 1</span><i class="addIcon fa-solid fa-plus"></i>
+            </button> -->
+                <button
+                  class="menuBtn rounded mainrBg border-0 shadow-btn me-2 d-flex align-items-center justify-content-center"><a href="history.html" class="nav-link"><i class="fa-solid fa-plus"></i></a></button>
+                <button
+                  class="menuBtn rounded mainrBg border-0 shadow-btn  d-flex align-items-center justify-content-center"><i
+                    class="fa-solid fa-gear"></i></button>
+              </div>
+            </div>
+
+          </div>
+          <div class="row mt-2 mb-2">
+            <div class="w-auto">
+              <h2 class="title-block">Get <span>Your Ticket</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 mt-4 mb-2">
+              <div class="w-100 tambola-show position-relative" style="padding: 18px;">
+
+                <div class="row align-items-center">
+                  <div class="col-12">
+                    <span class="position-absolute tambola-date">₹ 30/-</span>
+                    <div class="ticket-radial w-100 mb-3">
+                      <div class="ticket-radial-sub w-100">
+                        <table class="table table-bordered ticket-table mb-0">
+                          <tr>
+                            <td class="text-center ticket-book">3</td>
+                            <td class="text-center ticket-book">16</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">33</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">52</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">71</td>
+                            <td class="text-center"></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">16</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">16</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">1</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">3</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">16</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">33</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">52</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">71</td>
+                            <td class="text-center"></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <button class="allBtn" data-bs-toggle="modal" data-bs-target="#claimModal">Get one Ticket</button>
+                  </div>
+                  <!-- <div class="col-5">
+                    <img class="w-100 rounded" src="assets/img/about-Tambola2.png" />
+                  </div> -->
+                </div>
+
+              </div>
+            </div>
+            <div class="col-12 mt-4 mb-2">
+              <div class="w-100 tambola-show position-relative" style="padding: 18px;">
+
+                <div class="row align-items-center">
+                  <div class="col-12">
+                    <span class="position-absolute tambola-date">₹ 30/-</span>
+                    <div class="ticket-radial w-100 mb-3">
+                      <div class="ticket-radial-sub w-100">
+                        <table class="table table-bordered ticket-table mb-0">
+                          <tr>
+                            <td class="text-center ticket-book">3</td>
+                            <td class="text-center ticket-book">16</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">33</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">52</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">71</td>
+                            <td class="text-center"></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">16</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">16</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">1</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">3</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">16</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">33</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">52</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">71</td>
+                            <td class="text-center"></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <button class="allBtn" data-bs-toggle="modal" data-bs-target="#buyTicketModal">Get one
+                      Ticket</button>
+                  </div>
+                  <!-- <div class="col-5">
+                    <img class="w-100 rounded" src="assets/img/about-Tambola2.png" />
+                  </div> -->
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade modalAll" id="claimModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content  ticket-modal">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close d-none border-0" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h2>Are you Sure to buy?</h2>
+          <h2 class="mt-4">2 Tickets for </h2>
+        </div>
+        <div class="modal-footer border-0 text-center d-flex justify-content-around pb-3">
+          <button type="button" class="btn btn-2" data-bs-dismiss="modal" data-bs-toggle="modal"
+            data-bs-target="#btnModal"><span>Yes</span></button>
+          <button type="button" class="btn btn-2" data-bs-dismiss="modal"><span>No</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal-Two -->
+  <div class="modal fade modalAll" id="btnModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content  btn_modal">
+        <div class="modal-body d-flex flex-column gap-5">
+          <button class="allBtn">Start Playing</button>
+          <button class="allBtn">Buy Another Ticket</button>
+          <button class="allBtn mb-">Join Another Tambola</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Get-Two -->
+  <div class="modal fade modalAll" id="buyTicketModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content ticket-modal buyTicketModal">
+        <div class="modal-body">
+          <h2>Yoy already bought three tickets</h2>
+          <span class="bt  mt-4 ">
+            <button class="allBtn">Start Playing</button>
+            <a href="game-start.html" class="nav-link"><button class="allBtn mb-">Join Another Tambola</button></a>
+          </span>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+
+</body>
+
+</html>

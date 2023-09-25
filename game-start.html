@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tambola Game</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/Fontawsome/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-md-4 tombola-container">
+        <div class="container-fluid tambolaGame pt-0">
+          <div class="row justify-content-between align-items-center header">
+            <div class="w-auto">
+              <div class="d-flex align-items-center">
+                <button
+                  class="menuBtn rounded mainrBg border-0 me-2 shadow-btn d-flex align-items-center justify-content-center"><i
+                    class="fa-solid fa-bars"></i></button>
+                <button class="userProfile border-0 bg-transparent rounded-circle p-0"><img
+                    class="rounded-circle shadow-btn" src="assets/img/profile.jpg" /></button>
+              </div>
+            </div>
+            <div class="w-auto">
+              <a href="#">
+                <img src="assets/img/logo.png" width="100" />
+              </a>
+            </div>
+            <div class="w-auto">
+              <div class="d-flex align-items-center">
+                <!-- <button class="walletBtn border-0 shadow-btn rounded-pill me-3 d-flex align-items-center justify-content-between">
+              <i class="fa-solid fa-wallet"></i><span>₹ 1</span><i class="addIcon fa-solid fa-plus"></i>
+            </button> -->
+                <button
+                  class="menuBtn rounded mainrBg border-0 shadow-btn me-2 d-flex align-items-center justify-content-center"><i
+                    class="fa-solid fa-plus"></i></button>
+                <button
+                  class="menuBtn rounded mainrBg border-0 shadow-btn  d-flex align-items-center justify-content-center"><i
+                    class="fa-solid fa-gear"></i></button>
+              </div>
+            </div>
+
+          </div>
+          <div class="row mt-2 mb-2">
+            <div class="w-auto">
+              <h2 class="title-block mb-0">Game <span>Will Start</h2>
+              <p><i class="fa-solid fa-clock mb-0 sub-title"></i> 00 : 11 : 02</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="tambola-show w-100 p-2">
+                <ul class="ticket-bit d-flex p-0 m-0 justify-content-between">
+                  <li class="spx" style="border-color: #ffc30c;font-size: 15px;width: 50px;height: 50px;"><span>57</span></li>
+                  <li><span>23</span></li>
+                  <li><span>15</span></li>
+                  <li><span>5</span></li>
+                  <li><span>55</span></li>
+                  <li><span>51</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 mt-4 mb-2">
+              <div class="w-100 tambola-show position-relative" style="padding: 18px;">
+
+                <div class="row align-items-center">
+                  <div class="col-12">
+                    <div class="ticket-radial w-100 mb-3">
+                      <div class="ticket-radial-sub w-100">
+                        <div class="d-flex justify-content-between ticket-header pb-2">
+                          <p class="mb-0 josefinfont">Ticket 1</p>
+                          <p class="ticket-tro mb-0 dancing-font">Tro</p>
+                          <p class="mb-0 ticket-number josefinfont">64dgfbv475hdbg475</p>
+                        </div>
+                        <table class="table table-bordered ticket-table mb-0">
+                          <tr>
+                            <td class="text-center ticket-book">3</td>
+                            <td class="text-center ticket-book">16</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">33</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">52</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">71</td>
+                            <td class="text-center"></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">16</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">16</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">1</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">3</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">16</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">33</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">52</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">71</td>
+                            <td class="text-center"></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <button class="allBtn" data-bs-toggle="modal" data-bs-target="#claimModal">Claim</button>
+                  </div>
+                  <!-- <div class="col-5">
+                    <img class="w-100 rounded" src="assets/img/about-Tambola2.png" />
+                  </div> -->
+                </div>
+
+              </div>
+            </div>
+            <div class="col-12 mt-4 mb-2">
+              <div class="w-100 tambola-show position-relative" style="padding: 18px;">
+
+                <div class="row align-items-center">
+                  <div class="col-12">
+                    <div class="ticket-radial w-100 mb-3">
+                      <div class="ticket-radial-sub w-100">
+                        <div class="d-flex justify-content-between ticket-header pb-2">
+                          <p class="mb-0 josefinfont">Ticket 1</p>
+                          <p class="ticket-tro mb-0 dancing-font">Tro</p>
+                          <p class="mb-0 ticket-number josefinfont">64dgfbv475hdbg475</p>
+                        </div>
+                        <table class="table table-bordered ticket-table mb-0">
+                          <tr>
+                            <td class="text-center ticket-book">3</td>
+                            <td class="text-center ticket-book">16</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">33</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">52</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">71</td>
+                            <td class="text-center"></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">16</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">16</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">1</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">3</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">16</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">33</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">52</td>
+                            <td class="text-center"></td>
+                            <td class="text-center ticket-book">71</td>
+                            <td class="text-center"></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                   <a href="rewars.html" class="nav-link"><button class="allBtn">Claim</button></a>
+                  </div>
+                  <!-- <div class="col-5">
+                    <img class="w-100 rounded" src="assets/img/about-Tambola2.png" />
+                  </div> -->
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade modalAll" id="claimModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel">Modal title</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 quickfive-des mb-2" data-bs-toggle="modal" data-bs-target="#quickModal">
+              <div class="row align-items-center">
+                <div class="col-6">
+                  <h3 class="quickfive-title m-0">Quick Five</h3>
+                </div>
+                <div class="col-6">
+                  <div class="row">
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle"></div>
+                    </div>
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle"></div>
+                    </div>
+
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+
+                    <div class="col-4 text-center">
+                      <div class="rounded-circle quickfive-circle"></div>
+                    </div>
+                    <div class="col-4 text-center">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+                    <div class="col-4 text-center">
+                      <div class="rounded-circle quickfive-circle"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 quickfive-des mb-2">
+              <div class="row align-items-center">
+                <div class="col-6">
+                  <h3 class="quickfive-title m-0">Top Row</h3>
+                </div>
+                <div class="col-6">
+                  <div class="row">
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle"></div>
+                    </div>
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle "></div>
+                    </div>
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle"></div>
+                    </div>
+
+                    <div class="col-4 text-center">
+                      <div class="rounded-circle quickfive-circle"></div>
+                    </div>
+                    <div class="col-4 text-center">
+                      <div class="rounded-circle quickfive-circle "></div>
+                    </div>
+                    <div class="col-4 text-center">
+                      <div class="rounded-circle quickfive-circle"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 quickfive-des mb-2">
+              <div class="row align-items-center">
+                <div class="col-6">
+                  <h3 class="quickfive-title m-0">Middle Row</h3>
+                </div>
+                <div class="col-6">
+                  <div class="row">
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle"></div>
+                    </div>
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle "></div>
+                    </div>
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle"></div>
+                    </div>
+
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+
+                    <div class="col-4 text-center">
+                      <div class="rounded-circle quickfive-circle"></div>
+                    </div>
+                    <div class="col-4 text-center">
+                      <div class="rounded-circle quickfive-circle "></div>
+                    </div>
+                    <div class="col-4 text-center">
+                      <div class="rounded-circle quickfive-circle"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 quickfive-des mb-2">
+              <div class="row align-items-center">
+                <div class="col-6">
+                  <h3 class="quickfive-title m-0">Bottom Row</h3>
+                </div>
+                <div class="col-6">
+                  <div class="row">
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle"></div>
+                    </div>
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle "></div>
+                    </div>
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle"></div>
+                    </div>
+
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle"></div>
+                    </div>
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle "></div>
+                    </div>
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle"></div>
+                    </div>
+
+                    <div class="col-4 text-center">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+                    <div class="col-4 text-center">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+                    <div class="col-4 text-center">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 quickfive-des mb-2">
+              <div class="row align-items-center">
+                <div class="col-6">
+                  <h3 class="quickfive-title m-0">All Corners</h3>
+                </div>
+                <div class="col-6">
+                  <div class="row">
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle "></div>
+                    </div>
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle"></div>
+                    </div>
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle "></div>
+                    </div>
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle"></div>
+                    </div>
+
+                    <div class="col-4 text-center">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+                    <div class="col-4 text-center">
+                      <div class="rounded-circle quickfive-circle "></div>
+                    </div>
+                    <div class="col-4 text-center">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 quickfive-des mb-2">
+              <div class="row align-items-center">
+                <div class="col-6">
+                  <h3 class="quickfive-title m-0">Full House</h3>
+                </div>
+                <div class="col-6">
+                  <div class="row">
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+
+                    <div class="col-4 text-center">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+                    <div class="col-4 text-center">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+                    <div class="col-4 text-center">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade modalAll" id="quickModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel">Quick Five</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 quickfive-des mb-2">
+              <div class="row align-items-center">
+                <div class="col-6">
+                  <h3 class="quickfive-title m-0">Quick Five</h3>
+                </div>
+                <div class="col-6">
+                  <div class="row">
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle"></div>
+                    </div>
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle"></div>
+                    </div>
+
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+                    <div class="col-4 text-center mb-1">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+
+                    <div class="col-4 text-center">
+                      <div class="rounded-circle quickfive-circle"></div>
+                    </div>
+                    <div class="col-4 text-center">
+                      <div class="rounded-circle quickfive-circle secondBg"></div>
+                    </div>
+                    <div class="col-4 text-center">
+                      <div class="rounded-circle quickfive-circle"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <p class="quickfive-prize mb-0">Prize - Rs : 6.6</p>
+            </div>
+
+
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back to Game</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+
+</body>
+
+</html>
